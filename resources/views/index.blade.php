@@ -34,7 +34,7 @@
       <div class="row justify-content-md-center">
         <div class="col-md-9 ">
             <div class="card px-5 py-3 mt-5 shadow">
-               <h1 class="text-danger text-center mt-3 mb-4">Multi-step Form in Laravel 9</h1>
+               <h1 class="text-danger text-center mt-3 mb-4">Multi-step Form</h1>
 
                         <div class="nav nav-fill my-3">
                           <label class="nav-link shadow-sm step0    border ml-2 ">Step One</label>

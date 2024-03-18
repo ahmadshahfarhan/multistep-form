@@ -26,3 +26,8 @@ Route::controller(EmployeeController::class)->group(function(){
     Route::post('post','store');
 
 });
+
+Route::get('/test', function () {
+    return view('test');
+});
+
