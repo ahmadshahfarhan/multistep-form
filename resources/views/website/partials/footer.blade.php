@@ -50,7 +50,7 @@
                         <input placeholder="Enter your email"
                             class="lg:w-[381.47px] h-[46px] border-none outline-none p-1" type="email">
                         <button
-                            class=" bg-[#2563EB] text-white font-semibold px-[12.5px] py-[13px] rounded-[8px]">Subscribe</button>
+                            class=" bg-[#2563EB] text-white font-semibold px-[12.5px] py-[13px] rounded-[8px] sub-button">Subscribe</button>
                     </div>
                     <h1 class="text-[#9CA3AF] text-[14px] mt-3" style="font-weight: 400;">Lorem ipsum dolor amet.
                     </h1>
