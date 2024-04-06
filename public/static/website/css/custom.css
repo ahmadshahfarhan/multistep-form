@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .form-section {
     display: none;
 }
@@ -20,20 +31,62 @@
     margin-right: 72px;
 }
 
+
 @media screen and (max-width: 1000px) {
     .custom-container {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
-    
+
+    .background h2 {
+        margin-left: 15px !important;
+    }
 }
 
-.background {
+/* .background {
     position: relative;
     overflow: hidden;
+    height: 1000px;
+} */
+
+.background {
+    background: linear-gradient(120deg, #111827 70%, #00AFEA 30%);
+    transform-origin: top right;
+    z-index: -1;
+    height: 170px;
 }
 
-.background::before {
+.block-pic {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    bottom: -50;
+    right: -90;
+    transform: rotate(120deg);
+    background-color: #00AFEA;
+    box-shadow: 10px 10px 50px 30px #00AFEA;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .pic-bright {
+        filter: brightness(40%);
+    }
+
+    .block-pic {
+        position: absolute;
+        width: 150px;
+        height: 100px;
+        bottom: -50;
+        right: -90;
+        transform: rotate(120deg);
+        background-color: #00b0ea79;
+        box-shadow: 10px 10px 50px 30px #00b0ea79;
+        z-index: 1;
+    }
+}
+
+/* .background::before {
     content: "";
     position: absolute;
     top: 0;
@@ -44,7 +97,7 @@
     transform-origin: top right;
     transform: skewX(-40deg);
     z-index: -1;
-}
+} */
 
 .weigth {
     font-weight: 600;
@@ -54,7 +107,7 @@
     font-weight: 500;
 }
 
-.placeholder-1::placeholder{
+.placeholder-1::placeholder {
     text-align: center;
     color: #6B7280;
     font-weight: 500;
@@ -62,3 +115,77 @@
     line-height: 18.15px;
 }
 
+/* login */
+.login-button:hover {
+    background-color: #111827;
+    transition: 0.6s;
+}
+
+.login-button:hover img {
+    filter: brightness(1500%);
+    transition: 0.6s;
+}
+
+.login-button:hover h1 {
+    color: white;
+    transition: 0.6s;
+}
+
+.shadow-search {
+    box-shadow: 0 0 10px 0 rgba(211, 211, 211, 0.5);
+}
+
+@media screen and (max-width: 656px) {
+    .background h2 {
+        font-size: 25spx;
+    }
+    .input-slide {
+        width: 120px;
+        position: absolute;
+        z-index: 30;
+        top: 60px;
+    }
+}
+
+.next-button {
+    padding: 10px;
+    border: 1px solid #111827;
+}
+
+.next-button:hover {
+    color: #111827;
+    background-color: white;
+    border: 1px solid #111827;
+    transition: all 0.3s;
+}
+
+.card-near-footer {
+    background-color: #F3F4F680;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.card-near-footer:hover {
+    background-color: #F3F4F680;
+    border-radius: 20px;
+    transform: scale(1.03);
+    box-shadow: 0 0 15px 0px rgba(128, 128, 128, 0.299);
+}
+
+.card-text:hover p {
+    
+}
+
+@media screen and (max-width: 480px) {
+    .background h2 {
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+.sub-button:hover {
+    
+}

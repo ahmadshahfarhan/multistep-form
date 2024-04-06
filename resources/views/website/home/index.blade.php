@@ -14,7 +14,6 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
     integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
 @section('content')
 
 
@@ -37,7 +36,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                         Your address is required to provide accurate results.
                     </h2>
                     <div
-                        class=" bg-white border-[1px] border-[#E5E7EB] shadow-sm flex items-center p-3 gap-2 rounded-lg w-[400px] mx-auto">
+                        class=" bg-white border-[1px] border-[#E5E7EB] shadow-sm flex items-center p-3 gap-2 rounded-lg lg:w-[400px] md:w-[400px] w-full mx-auto">
                         <i class="fas fa-envelope"></i>
                         <input class="w-[400px] outline-none border-none" placeholder="you@email.com" type="email"
                             name="email" id="" required>
@@ -71,7 +70,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                 <div class="mt-[60px] mx-auto justify-center flex gap-5 form-navigation">
                     <button class=" text-[#1F2937] text-[17px] weigth previous"><i class="fas fa-arrow-left"></i>
                         PREVOUS</button>
-                    <button class=" text-white bg-[#111827] p-3 rounded-lg text-[17px] weigth next">NEXT <i
+                    <button class=" next-button text-white bg-[#111827] rounded-lg text-[17px] weigth next">NEXT <i
                             class="fas fa-arrow-right text-sm font-weight"></i></button>
                     {{-- <button type="submit"
                         class=" text-white bg-[#111827] p-3 rounded-lg text-[17px] weigth next">Submit</button> --}}
@@ -82,7 +81,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
             <div class=" mt-[150px]">
                 <h2 class="text-black text-[28px] text-center" style="font-weight: 700;">Why Use Solar Selector?</h2>
                 <div class=" mt-[80px] flex flex-wrap gap-[32px] justify-center">
-                    <div class=" bg-white w-[410.67px] p-4">
+                    <div class=" card-text card-near-footer w-[410.67px] p-4">
                         <img src=" {{ asset('static/website/images/Link.png') }}" alt="">
                         <h2 class=" mt-4 text-[#1F2937] text-[18px]" style="font-weight: 700;">Access Solar Incentives
                         </h2>
@@ -90,7 +89,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                             qualify for solar incentives up
                             to $3,700.</p>
                     </div>
-                    <div class=" bg-white w-[410.67px] p-4">
+                    <div class=" card-text card-near-footer w-[410.67px] p-4">
                         <img src=" {{ asset('static/website/images/Link.png') }}" alt="">
                         <h2 class=" mt-4 text-[#1F2937] text-[18px]" style="font-weight: 700;">Access Solar Incentives
                         </h2>
@@ -98,7 +97,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                             qualify for solar incentives up
                             to $3,700.</p>
                     </div>
-                    <div class=" bg-white w-[410.67px] p-4">
+                    <div class=" card-text card-near-footer w-[410.67px] p-4">
                         <img src=" {{ asset('static/website/images/Link.png') }}" alt="">
                         <h2 class=" mt-4 text-[#1F2937] text-[18px]" style="font-weight: 700;">Access Solar Incentives
                         </h2>
