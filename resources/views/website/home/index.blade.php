@@ -19,8 +19,8 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
 
     <div class="mt-[50px] custom-container">
         <div class="">
-            <div class="bg-[#00AFEA14]  py-2 px-3 rounded-[100px] w-[113px] justify-center mx-auto">
-                <h2 class="text-[#00AFEA] font-semibold text-center">Question 1</h2>
+            <div class="bg-[#EE790014]  py-2 px-3 rounded-[100px] w-[113px] justify-center mx-auto">
+                <h2 class="text-[#EE7900] font-semibold text-center">Question 1</h2>
             </div>
 
             <form action="/post" method="post" class="employee-form">
@@ -78,7 +78,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
 
             </form>
 
-            <div class=" mt-[150px]">
+            {{-- <div class=" mt-[150px]">
                 <h2 class="text-black text-[28px] text-center" style="font-weight: 700;">Why Use Solar Selector?</h2>
                 <div class=" mt-[80px] flex flex-wrap gap-[32px] justify-center">
                     <div class=" card-text card-near-footer w-[410.67px] p-4">
@@ -106,7 +106,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                             to $3,700.</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 @stop

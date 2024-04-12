@@ -21,7 +21,7 @@ $(function() {
         // Tetapkan warna langkah-langkah yang sesuai
         steps.each(function(i, stepElement) {
             if (i <= index) {
-                stepElement.style.backgroundColor = "#2563EB";
+                stepElement.style.backgroundColor = "#04D7B1";
                 stepElement.style.color = "white";
             } else {
                 stepElement.style.backgroundColor = "#F3F4F6";

@@ -50,10 +50,24 @@ body {
 } */
 
 .background {
-    background: linear-gradient(120deg, #111827 70%, #00AFEA 30%);
+    /* background: linear-gradient(120deg, #111827 70%, #00AFEA 30%);
     transform-origin: top right;
-    z-index: -1;
+    z-index: -1; */
     height: 170px;
+    background-color: #F5F6F8;
+}
+
+.bg-opleft {
+    position: absolute;
+    width: 600px;
+    height: 170px;
+    left: -90;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.0), rgba(125, 123, 133, 0.3));
+    z-index: 1;
+}
+
+.zeedds {
+    z-index: 1;
 }
 
 .block-pic {
@@ -68,10 +82,46 @@ body {
     z-index: 1;
 }
 
+.color-head {
+    color: rgba(0, 0, 0, 0.32);
+    font-weight: 500;
+}
+
+.titan-one-regular {
+    color: black;
+}
+
 @media screen and (max-width: 1000px) {
+
     .pic-bright {
-        filter: brightness(40%);
+        filter: brightness(100%);
+        transition: 0.3s;
     }
+
+    .titan-one-regular {
+        color: rgb(0, 0, 0);
+        transition: 0.3s;
+    }
+
+    .color-head {
+        color: rgb(44, 44, 44);
+        transition: 0.3s;
+    }
+
+    /* .bg-opleft {
+        position: absolute;
+        width: 100%;
+        height: 170px;
+        left: -90;
+        background-color: #d4d6d9;
+        z-index: 0;
+        transition: 0.3s;
+    } */
+
+    .zeedds {
+        margin-left: 20px;
+    }
+
 
     .block-pic {
         position: absolute;
@@ -83,6 +133,29 @@ body {
         background-color: #00b0ea79;
         box-shadow: 10px 10px 50px 30px #00b0ea79;
         z-index: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* .pic-bright {
+        filter: blur(1px);
+    } */
+
+    .titan-one-regular {
+        text-align: center;
+        
+    }
+
+    .color-head {
+        text-align: center;
+        line-height: 19px;
+        font-size: 14px;
+    }
+
+    .zeedds {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -2px;
     }
 }
 
@@ -139,6 +212,7 @@ body {
     .background h2 {
         font-size: 25spx;
     }
+
     .input-slide {
         width: 120px;
         position: absolute;
@@ -172,9 +246,7 @@ body {
     box-shadow: 0 0 15px 0px rgba(128, 128, 128, 0.299);
 }
 
-.card-text:hover p {
-    
-}
+.card-text:hover p {}
 
 @media screen and (max-width: 480px) {
     .background h2 {
@@ -186,6 +258,46 @@ body {
     }
 }
 
-.sub-button:hover {
-    
+.sub-button:hover {}
+
+/* footer */
+.custom-footer {
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+@media screen and (max-width: 1000px) {
+    .custom-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .custom-container {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
+.footerres {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .footerres-main {
+        display: none;
+    }
+
+    .footerres {
+        display: block;
+    }
+
+    .mt-footer {
+        margin-top: 12px;
+    }
+
+    .mt-toimg{
+        margin-top: 14px;
+    }
 }
