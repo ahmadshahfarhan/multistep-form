@@ -5,11 +5,11 @@
             <input type="text" placeholder="Search.." style="display: none"
                 class="border outline-none rounded-lg shadow-search input-slide py-2 p-2">
             <i class="fa fa-search search-button hover:text-black text-gray-400 transition-all cursor-pointer"></i>
-            <div
+            {{-- <div
                 class=" flex gap-2 items-center px-3 py-3 border-[1px] border-[#E5E7EB] rounded-xl cursor-pointer login-button">
                 <img width="14" src="{{ asset('static/website/images/user.svg') }}" alt="">
                 <h1 class="text-[#1F2937] text-[15px] font-semibold">Login</h1>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>

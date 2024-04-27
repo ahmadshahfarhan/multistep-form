@@ -335,3 +335,24 @@ body {
         margin-top: 0;
         }
 }
+
+/* custom required quesrrion 8 */
+
+
+.custom-required-message {
+    display: block;
+    color: #9CA3AF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.07px;
+    margin-top: 4px;
+}
+
+
+
+/* progres bar */
+.on-layout{
+    width: 116.5px;
+    height: 6px;
+}
+

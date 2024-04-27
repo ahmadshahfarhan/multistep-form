@@ -36,19 +36,19 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                 </h2>
                 <div class=" mx-auto justify-center flex flex-wrap gap-[32px]">
                     <div
-                        class=" bg-white border-[1px] border-[#EE7900] custom-question rounded-[24px] inline-block layout ordal-quest p-1">
-                        <img class=" justify-center mx-auto mt-quest"
-                            src=" {{ asset('static/website/images/question1/qus1.png') }}" alt="">
-                        <div class=" mx-auto mt-[16px]">
-                            <h2 class="text-[#1F2937] text-[16px] weigth-2 text-center"> Yes, I do</h2>
-                        </div>
-                    </div>
-                    <div
                         class=" bg-white border-[1px] hover:border-[#EE7900] custom-question rounded-[24px] inline-block layout ordal-quest p-1">
                         <img class=" justify-center mx-auto mt-[35px]"
                             src=" {{ asset('static/website/images/question1/ques1a.png') }}" alt="">
                         <div class=" mx-auto mt-[16px]">
                             <h2 class="text-[#1F2937] text-[16px] weigth-2 text-center"> Yes, I do</h2>
+                        </div>
+                    </div>
+                    <div
+                        class=" bg-white border-[1px] border-[#EE7900] custom-question rounded-[24px] inline-block layout ordal-quest p-1">
+                        <img class=" justify-center mx-auto mt-quest"
+                            src=" {{ asset('static/website/images/question1/qus1.png') }}" alt="">
+                        <div class=" mx-auto mt-[16px]">
+                            <h2 class="text-[#1F2937] text-[16px] weigth-2 text-center"> No, I rent</h2>
                         </div>
                     </div>
                 </div>
@@ -279,7 +279,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                             name? *</h1>
                         <input
                             class="w-[360px] outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1"
-                            type="text" name="name" placeholder="first name" required>
+                            type="text" name="name" placeholder="first name">
                     </div>
                     <div>
                         <h1 class="text-black text-[18px] weigth text-center mb-[12px]" for="">What's your
@@ -287,7 +287,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                             name? *</h1>
                         <input
                             class=" w-[360px] outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1"
-                            type="text" name="last_name" placeholder="lass name" required>
+                            type="text" name="last_name" placeholder="lass name">
                     </div>
                 </div>
             </div>
@@ -309,21 +309,38 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                             class=" bg-white border-[1px] border-[#E5E7EB] shadow-sm flex items-center p-2   gap-2 rounded-lg w-[400px] mx-auto">
                             <i class="fas fa-envelope"></i>
                             <input class="w-[400px] outline-none border-none bg-none" placeholder="you@email.com"
-                                type="email" name="email" id="" required>
+                                type="email" name="address" id="">
                         </div>
                     </div>
                     <div>
                         <h1 class="text-black text-[18px] weigth text-center mb-[12px]" for="">What's
                             your mobile phone number? *</h1>
                         <input
-                            class=" w-[360px] outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1"
-                            type="phone" name="last_name" placeholder="lass name" required>
+                            class="custom-input w-[360px] outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1"
+                            type="number" name="phone" placeholder="lass name" required>
+                        <span class="custom-required-message">You will be required to verify this mobile number</span>
                     </div>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            var inputs = document.querySelectorAll('.custom-input');
+                            inputs.forEach(function(input) {
+                                input.addEventListener('invalid', function() {
+                                    this.setCustomValidity(' '); // Menghapus pesan invalid bawaan
+                                    var message = this.parentNode.querySelector('.custom-required-message');
+                                    message.style.display = 'block'; // Menampilkan pesan kustom
+                                });
+                                input.addEventListener('input', function() {
+                                    var message = this.parentNode.querySelector('.custom-required-message');
+                                    message.style.display = 'none'; // Menyembunyikan pesan kustom saat input valid
+                                });
+                            });
+                        });
+                    </script>
                 </div>
             </div>
 
 
-            <div class="mt-[60px] mx-auto justify-center flex gap-5 form-navigation">
+            <div class="mt-[96px] mx-auto justify-center flex gap-5 form-navigation">
                 <button class=" text-[#1F2937] text-[17px] weigth previous"><i class="fas fa-arrow-left"></i>
                     PREVOUS</button>
                 <button class=" next-button text-white bg-[#111827] rounded-lg text-[17px] weigth next">NEXT <i
