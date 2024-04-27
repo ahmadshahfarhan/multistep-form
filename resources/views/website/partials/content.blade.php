@@ -1,7 +1,9 @@
 <div>
     @include('website.partials.navbar')
 
-    @yield('content')
+    <div class=" min-h-[90vh]">
+        @yield('content')
+    </div>
 
     @include('website.partials.footer')
 </div>

@@ -301,3 +301,37 @@ body {
         margin-top: 14px;
     }
 }
+
+.custom-question:hover {
+    box-shadow: 0 6px 18px 0 rgba(238, 121, 0, 0.2), 0 2px 4px -1px rgba(238, 121, 0, 0.1);
+    transition: 0.3s;
+  }
+
+  /* control question layouting */
+  .layout{
+    width: 240px;
+    height: 210px;
+  }
+  
+@media screen and (max-width: 649px) {
+    .layout{
+        width: 100%;
+        height: auto;
+        max-width: 40%;
+        max-height: 30%;
+    }
+}
+/* sytre font breakpoint */
+.mt-quest{
+    margin-top: 25px;
+    }
+
+@media screen and (max-width:767px) {
+    .ordal-quest{
+        padding: 0;
+    }
+    
+    .mt-quest{
+        margin-top: 0;
+        }
+}
