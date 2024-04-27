@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Employee;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
@@ -18,16 +19,6 @@ class EmployeeController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -35,52 +26,32 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
+        // Simpan data ke database
         Employee::create($request->all());
+
+        // Kirim data ke SheetDB
+        $client = new Client([
+            'headers' => [
+                'Content-Type' => 'application/json'
+            ]
+        ]);
+
+        $data = [
+            'data' => [
+                'id' => "INCREMENT",
+                'name' => $request->input('name'),
+                'last_name' => $request->input('last_name'),
+                'email' => $request->input('email'),
+                'phone' => $request->input('phone'),
+                'address' => $request->input('address')
+            ]
+        ];
+
+        $response = $client->post('https://sheetdb.io/api/v1/r7ek69vtuei1p', [
+            'json' => $data,
+        ]);
+
+        // Redirect kembali
         return back();
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Employee  $employee
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Employee $employee)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Employee  $employee
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Employee $employee)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Employee  $employee
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Employee $employee)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Employee  $employee
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Employee $employee)
-    {
-        //
     }
 }

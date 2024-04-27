@@ -66,6 +66,42 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                     </div>
                 </div>
 
+                <div class="form-section">
+                    <h2 class=" text-black text-[32px] weigth text-center mt-4">What's your phone number? *</h2>
+                    <div class="progress-bar flex gap-1 items-center mx-auto justify-center mt-6">
+                        <div class="bg-[#F3F4F6] step step0 w-[70.15px] h-[6px] rounded"></div>
+                        <div class="bg-[#F3F4F6] step step1 w-[70.15px] h-[6px] rounded"></div>
+                        <div class="bg-[#F3F4F6] step step2 w-[70.15px] h-[6px] rounded"></div>
+                    </div>
+                    <h2 class="text-gray-300 mt-6 mb-[48px] text-center">
+                        Your address is required to provide accurate results.
+                    </h2>
+                    <div
+                        class=" bg-white border-[1px] border-[#E5E7EB] shadow-sm flex items-center p-3 gap-2 rounded-lg lg:w-[400px] md:w-[400px] w-full mx-auto">
+                        <i class="fas fa-envelope"></i>
+                        <input class="w-[400px] outline-none border-none" placeholder="+62" type="phone"
+                            name="phone" id="" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class=" text-black text-[32px] weigth text-center mt-4">What's your home address? *</h2>
+                    <div class="progress-bar flex gap-1 items-center mx-auto justify-center mt-6">
+                        <div class="bg-[#F3F4F6] step step0 w-[70.15px] h-[6px] rounded"></div>
+                        <div class="bg-[#F3F4F6] step step1 w-[70.15px] h-[6px] rounded"></div>
+                        <div class="bg-[#F3F4F6] step step2 w-[70.15px] h-[6px] rounded"></div>
+                    </div>
+                    <h2 class="text-gray-300 mt-6 mb-[48px] text-center">
+                        Your address is required to provide accurate results.
+                    </h2>
+                    <div
+                        class=" bg-white border-[1px] border-[#E5E7EB] shadow-sm flex items-center p-3 gap-2 rounded-lg lg:w-[400px] md:w-[400px] w-full mx-auto">
+                        <i class="fas fa-envelope"></i>
+                        <input class="w-[400px] outline-none border-none" placeholder="you@email.com" type="address"
+                            name="address" id="" required>
+                    </div>
+                </div>
+
 
                 <div class="mt-[60px] mx-auto justify-center flex gap-5 form-navigation">
                     <button class=" text-[#1F2937] text-[17px] weigth previous"><i class="fas fa-arrow-left"></i>
