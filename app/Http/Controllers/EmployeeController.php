@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Employee;
+use App\Models\Multi_Step;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
@@ -27,7 +28,7 @@ class EmployeeController extends Controller
     public function store(Request $request)
     {
         // Simpan data ke database
-        Employee::create($request->all());
+        Multi_Step::create($request->all());
 
         // Kirim data ke SheetDB
         $client = new Client([
@@ -39,11 +40,16 @@ class EmployeeController extends Controller
         $data = [
             'data' => [
                 'id' => "INCREMENT",
-                'name' => $request->input('name'),
-                'last_name' => $request->input('last_name'),
-                'email' => $request->input('email'),
-                'phone' => $request->input('phone'),
-                'address' => $request->input('address')
+                'Do you own or rent a house?' => $request->input('Q1'),
+                'Do you already have solar panels?' => $request->input('Q2'),
+                'How old is your existing solar system?' => $request->input('Q3'),
+                'Why are you interested in solar battery?' => $request->input('Q4'),
+                'How much is your quarterly electricity bill?' => $request->input('Q5'),
+                'Whats the age of your home?' => $request->input('Q6'),
+                'Whats your first name?' => $request->input('Q7'),
+                'Whats your last name?' => $request->input('Q8'),
+                'Whats your email address?' => $request->input('Q9'),
+                'Whats your mobile phone number?' => $request->input('Q10')
             ]
         ];
 

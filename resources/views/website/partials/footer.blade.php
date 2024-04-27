@@ -1,4 +1,5 @@
-<footer class=" bg-[#111827]">
+{{-- footer branding pertama --}}
+{{-- <footer class=" bg-[#111827]">
     <div class="custom-container flex flex-col justify-between mt-[80px] mx-auto lg:flex-row py-3">
         <span
             class="mt-[80px] text-[#FFFFFF] text-XL font-semibold custom-container w-[200px] text-center mx-auto">AUSTRALIAN
@@ -69,5 +70,38 @@
             <i class="fab fa-github"></i>
             <i class="fab fa-instagram"></i>
         </div>
+    </div>
+</footer> --}}
+
+{{-- footer branding kedua --}}
+<footer class=" mt-[245px] footerres-main">
+    <div class="custom-footer flex flex-wrap justify-between items-center mx-auto bg-[#06080C] py-5">
+        <img class="main-logo" src="{{ asset('static/website/images/srne_logo.svg') }}" alt="">
+        <h1 class=" text-[#9CA3AF80] text-[14px] text-center mx-auto justify-center" style=" font-weight:400;">© 2022
+            agps. All rights reserved.</h1>
+        <div class="flex gap-[28px] items-center text-white justify-center lg:mx-0 md:mx-0 sm:mx-auto mx-auto">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+</footer>
+
+<footer class="lg:mt-[245px] md:mt-[245px] sm:mt-[245px] mt-[230px] footerres">
+    <div class="custom-footer flex flex-wrap mx-auto bg-[#06080C] py-5">
+        <div class="flex items-center flex-wrap justify-between w-full px-5">
+            <img class=" lg:mx-0 md:mx-0 sm:0 mx-auto" src="{{ asset('static/website/images/srne_logo.svg') }}" alt="">
+            <div class="flex gap-[28px] items-center lg:mx-0 md:mx-0 sm:mx-0 mx-auto text-white mt-toimg">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-google"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <h1 class="text-[#9CA3AF80] text-[14px] text-center mx-auto mt-footer" style="font-weight:400;">© 2022 agps. All
+            rights reserved.</h1>
     </div>
 </footer>
