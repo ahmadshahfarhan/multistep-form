@@ -74,8 +74,8 @@
 </footer> --}}
 
 {{-- footer branding kedua --}}
-<footer class=" mt-[245px] footerres-main">
-    <div class="custom-footer flex flex-wrap justify-between items-center mx-auto bg-[#06080C] py-5">
+<footer class=" lg:mt-[245px] md:mt-[245px] sm:mt-[245px] mt-[10px] footerres-main">
+    <div class="custom-footer flex flex-wrap justify-between items-center mx-auto bg-[#06080C] py-5 ">
         <img class="main-logo" src="{{ asset('static/website/images/srne_logo.svg') }}" alt="">
         <h1 class=" text-[#9CA3AF80] text-[14px] text-center mx-auto justify-center" style=" font-weight:400;">© 2022
             agps. All rights reserved.</h1>

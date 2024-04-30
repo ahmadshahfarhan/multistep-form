@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\SheetController;
+use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,3 +32,4 @@ Route::get('/test', function () {
     return view('test');
 });
 
+Route::get('insert', [ApiController::class, 'sendDataToSheetDB']);

@@ -1,5 +1,5 @@
 <div class="custom-container">
-    <div class=" flex justify-between bg-white py-[33px]">
+    <div class=" flex justify-between bg-white lg:py-[33px] md:py-[33px] sm:py-[33px] py-[15px]">
         <img class=" w-[120.8px] h-[40px]" src="{{ asset('static/website/images/srne_log.png') }}" alt="">
         <div class=" flex gap-5 items-center relative">
             <input type="text" placeholder="Search.." style="display: none"

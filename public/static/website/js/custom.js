@@ -73,3 +73,148 @@ $(function() {
         navigateTo(0, index);
     });
 });
+
+
+
+// question 1
+document.addEventListener("DOMContentLoaded", function() {
+    var ques1_1_a = document.getElementById('ques-1-1-a');
+    var ques1_2_a = document.getElementById('ques-1-2-a');
+
+    document.getElementById('ques-1-1-a').addEventListener('click', function() {
+        ques1_1_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+
+    document.getElementById('ques-1-2-a').addEventListener('click', function() {
+        ques1_2_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+});
+
+// question 2
+document.addEventListener("DOMContentLoaded", function() {
+    var ques1_1_a = document.getElementById('ques-2-1-a');
+    var ques1_2_a = document.getElementById('ques-2-2-a');
+    var ques1_3_a = document.getElementById('ques-2-3-a');
+
+    document.getElementById('ques-2-1-a').addEventListener('click', function() {
+        ques1_1_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+
+    document.getElementById('ques-2-2-a').addEventListener('click', function() {
+        ques1_2_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+    
+    document.getElementById('ques-2-3-a').addEventListener('click', function() {
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.add('border-[#EE7900]', 'shadow-custom');
+    });
+});
+
+// qustion 3
+document.addEventListener("DOMContentLoaded", function() {
+    var ques1_1_a = document.getElementById('ques-3-1-a');
+    var ques1_2_a = document.getElementById('ques-3-2-a');
+
+    document.getElementById('ques-3-1-a').addEventListener('click', function() {
+        ques1_1_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+
+    document.getElementById('ques-3-2-a').addEventListener('click', function() {
+        ques1_2_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+});
+
+// qustion 4
+document.addEventListener("DOMContentLoaded", function() {
+    var ques1_1_a = document.getElementById('ques-4-1-a');
+    var ques1_2_a = document.getElementById('ques-4-2-a');
+    var ques1_3_a = document.getElementById('ques-4-3-a');
+
+    document.getElementById('ques-4-1-a').addEventListener('click', function() {
+        ques1_1_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+
+    document.getElementById('ques-4-2-a').addEventListener('click', function() {
+        ques1_2_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+    
+    document.getElementById('ques-4-3-a').addEventListener('click', function() {
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.add('border-[#EE7900]', 'shadow-custom');
+    });
+});
+
+// qustion 5
+document.addEventListener("DOMContentLoaded", function() {
+    var ques1_1_a = document.getElementById('ques-5-1-a');
+    var ques1_2_a = document.getElementById('ques-5-2-a');
+    var ques1_3_a = document.getElementById('ques-5-3-a');
+    var ques1_4_a = document.getElementById('ques-5-4-a');
+
+    document.getElementById('ques-5-1-a').addEventListener('click', function() {
+        ques1_1_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_4_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+
+    document.getElementById('ques-5-2-a').addEventListener('click', function() {
+        ques1_2_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_4_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+    
+    document.getElementById('ques-5-3-a').addEventListener('click', function() {
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_4_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+
+    document.getElementById('ques-5-4-a').addEventListener('click', function() {
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_4_a.classList.add('border-[#EE7900]', 'shadow-custom');
+    });
+});
+
+// qustion 6
+document.addEventListener("DOMContentLoaded", function() {
+    var ques1_1_a = document.getElementById('ques-6-1-a');
+    var ques1_2_a = document.getElementById('ques-6-2-a');
+    var ques1_3_a = document.getElementById('ques-6-3-a');
+
+    document.getElementById('ques-6-1-a').addEventListener('click', function() {
+        ques1_1_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+
+    document.getElementById('ques-6-2-a').addEventListener('click', function() {
+        ques1_2_a.classList.add('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+    });
+    
+    document.getElementById('ques-6-3-a').addEventListener('click', function() {
+        ques1_2_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_1_a.classList.remove('border-[#EE7900]', 'shadow-custom');
+        ques1_3_a.classList.add('border-[#EE7900]', 'shadow-custom');
+    });
+});

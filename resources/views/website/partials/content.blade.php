@@ -1,7 +1,7 @@
 <div>
     @include('website.partials.navbar')
 
-    <div class=" min-h-[90vh]">
+    <div class=" lg:min-h-[90vh] md:min-h-[90vh] sm:min-h-[90vh] min-h-0">
         @yield('content')
     </div>
 
