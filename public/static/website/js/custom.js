@@ -41,6 +41,21 @@ $(function() {
     $('.form-navigation .next').click(function() {
         var currentIndex = curIndex();
         var nextIndex = currentIndex + 1;
+
+        // Mencari tipe input dari langkah saat ini
+        var $currentSection = $sections.eq(currentIndex);
+        var $currentInputs = $currentSection.find('input[type="radio"]');
+        var isRadioInput = $currentInputs.length > 0;
+
+        // Jika input adalah radio, periksa apakah ada yang dipilih
+        if (isRadioInput) {
+            var radioChecked = $currentInputs.filter(':checked').length > 0;
+            if (!radioChecked) {
+                // alert('Please select an option before proceeding.');
+                return;
+            }
+        }
+
         currentProgressBarIndex = nextIndex % $progressBars.length; // Perbarui indeks progress bar
 
         $('.employee-form').parsley().whenValidate({
@@ -64,6 +79,7 @@ $(function() {
         });
     });
 
+    // Setiap input pada setiap langkah akan memiliki grup Parsley sesuai dengan indeks langkahnya
     $sections.each(function(index, section) {
         $(section).find(':input').attr('data-parsley-group', 'block-' + index);
     });
@@ -73,6 +89,9 @@ $(function() {
         navigateTo(0, index);
     });
 });
+
+
+
 
 
 
@@ -218,3 +237,6 @@ document.addEventListener("DOMContentLoaded", function() {
         ques1_3_a.classList.add('border-[#EE7900]', 'shadow-custom');
     });
 });
+
+
+

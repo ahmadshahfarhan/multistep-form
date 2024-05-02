@@ -359,6 +359,10 @@ body {
     .mt-quest {
         margin-top: 26px;
     }
+
+    .coverce{
+        margin-top: 20px;
+    }
 }
 
 /* phone */
@@ -388,6 +392,10 @@ body {
 
     .label-panel {
         font-size: 16px;
+    }
+
+    .coverce{
+        margin-top: 0;
     }
 }
 

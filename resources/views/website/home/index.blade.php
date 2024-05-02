@@ -19,7 +19,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
 
     <div class="mt-[50px] custom-container">
         <div class="">
-            <form class="max-done" action="/post" method="post" class="employee-form">
+            <form action="/post" method="post" class="employee-form">
                 @csrf
                 {{-- question 1 --}}
                 <div class="form-section">
@@ -31,7 +31,8 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                 @section('progres')
                     @include('website.progres')
                 @show
-                <h2 class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
+                <h2
+                    class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
                     Select your best option.
                 </h2>
                 <div class="mx-auto justify-center flex flex-wrap gap-[32px]">
@@ -77,7 +78,8 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                 @section('progres')
                     @include('website.progres')
                 @show
-                <h2 class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
+                <h2
+                    class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
                     Select your best option.
                 </h2>
 
@@ -142,7 +144,8 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                 @section('progres')
                     @include('website.progres')
                 @show
-                <h2 class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
+                <h2
+                    class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
                     Your best guess is ok.
                 </h2>
 
@@ -191,7 +194,8 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                 @section('progres')
                     @include('website.progres')
                 @show
-                <h2 class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
+                <h2
+                    class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
                     Tell us why you’re enquiring today.
                 </h2>
 
@@ -230,7 +234,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                         <div id="ques-4-3-a"
                             class=" bg-white border-[1px] hover:border-[#EE7900] custom-question radius-border-q p-1 inline-block layout ordal-quest lg:pt-0 md:pt-0 sm:pt-0 pt-4 lg:pb-0 md:pb-0 sm:pb-0 pb-4">
                             <div class="phone-flex lg:mx-0 md:mx-0 sm:mx-0 mx-[68px]">
-                                <img class=" justify-center mx-auto lg:mt-[40px] md:mt-[40px] sm:mt-[40px] img-custom-ques"
+                                <img class=" justify-center mx-auto lg:mt-[40px] md:mt-[40px] sm:mt-[40px] coverce img-custom-ques"
                                     src="{{ asset('static/website/images/question4/ques-4-4-4.png') }}"
                                     alt="">
                                 <div class=" mx-auto mt-[10px] justify-center">
@@ -256,7 +260,8 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                 @section('progres')
                     @include('website.progres')
                 @show
-                <h2 class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
+                <h2
+                    class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
                     Your best guess is ok
                 </h2>
 
@@ -334,7 +339,8 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                 @section('progres')
                     @include('website.progres')
                 @show
-                <h2 class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
+                <h2
+                    class="text-gray-300 lg:mt-6 md:mt-6 sm:mt-6 mt-4 lg:mb-[48px] md:mb-[48px] sm:mb-[48px] mb-[30px] text-center">
                     Your best guess is ok
                 </h2>
 
@@ -410,7 +416,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                             name? *</h1>
                         <input
                             class=" lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px]  outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1"
-                            type="text" name="Q8" placeholder="lass name">
+                            type="text" name="Q8" placeholder="lass name" >
                     </div>
                 </div>
             </div>
@@ -431,8 +437,9 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                         <div
                             class=" bg-white border-[1px] border-[#E5E7EB] shadow-sm flex items-center p-2   gap-2 rounded-lg lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px] mx-auto">
                             <i class="fas fa-envelope"></i>
-                            <input class="lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px] outline-none border-none bg-none" placeholder="you@email.com"
-                                type="email" name="Q9" id="">
+                            <input
+                                class="lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px] outline-none border-none bg-none"
+                                placeholder="you@email.com" type="email" name="Q9" id="">
                         </div>
                     </div>
                     <div>
@@ -441,68 +448,23 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                         <input
                             class="custom-input lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px] outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1"
                             type="phone" name="Q10" placeholder="+61 0000 000" required>
-                        <span class="custom-required-message">You will be required to verify this mobile number</span>
-                        <script>
-                            document.addEventListener("DOMContentLoaded", function() {
-                                var inputs = document.querySelectorAll('.custom-input');
-                                inputs.forEach(function(input) {
-                                    input.addEventListener('invalid', function() {
-                                        this.setCustomValidity(' '); // Menghapus pesan invalid bawaan
-                                        var message = this.parentNode.querySelector('.custom-required-message');
-                                        message.style.display = 'block'; // Menampilkan pesan kustom
-                                    });
-                                    input.addEventListener('input', function() {
-                                        var message = this.parentNode.querySelector('.custom-required-message');
-                                        message.style.display = 'none'; // Menyembunyikan pesan kustom saat input valid
-                                    });
-                                });
-                            });
-                        </script>
                     </div>
                 </div>
             </div>
 
-
-            <div class="lg:mt-[60px] md:mt-[60px] sm:mt-[60px] mt-[25px] mx-auto justify-center flex gap-5 form-navigation">
+            {{-- tombol prev dan next --}}
+            <div
+                class="lg:mt-[60px] md:mt-[60px] sm:mt-[60px] mt-[25px] mx-auto justify-center flex gap-5 form-navigation">
                 <button class=" text-[#1F2937] text-[17px] weigth previous"><i class="fas fa-arrow-left"></i>
                     PREVOUS</button>
-                <button class=" next-button text-white bg-[#111827] rounded-lg text-[17px] weigth next">NEXT <i
+                <button class=" next-button fungsi text-white bg-[#111827] rounded-lg text-[17px] weigth next">NEXT <i
                         class="fas fa-arrow-right text-sm font-weight"></i></button>
                 <button type="submit"
                     class=" text-white bg-[#111827] p-3 rounded-lg text-[17px] weigth next">Submit</button>
             </div>
+            
 
         </form>
-
-        {{-- <div class=" mt-[150px]">
-                <h2 class="text-black text-[28px] text-center" style="font-weight: 700;">Why Use Solar Selector?</h2>
-                <div class=" mt-[80px] flex flex-wrap gap-[32px] justify-center">
-                    <div class=" card-text card-near-footer w-[410.67px] p-4">
-                        <img src=" {{ asset('static/website/images/Link.png') }}" alt="">
-                        <h2 class=" mt-4 text-[#1F2937] text-[18px]" style="font-weight: 700;">Access Solar Incentives
-                        </h2>
-                        <p class=" mt-1 text-gray-400 text-[16px]">In less than 60 seconds you'll find out if you
-                            qualify for solar incentives up
-                            to $3,700.</p>
-                    </div>
-                    <div class=" card-text card-near-footer w-[410.67px] p-4">
-                        <img src=" {{ asset('static/website/images/Link.png') }}" alt="">
-                        <h2 class=" mt-4 text-[#1F2937] text-[18px]" style="font-weight: 700;">Access Solar Incentives
-                        </h2>
-                        <p class=" mt-1 text-gray-400 text-[16px]">In less than 60 seconds you'll find out if you
-                            qualify for solar incentives up
-                            to $3,700.</p>
-                    </div>
-                    <div class=" card-text card-near-footer w-[410.67px] p-4">
-                        <img src=" {{ asset('static/website/images/Link.png') }}" alt="">
-                        <h2 class=" mt-4 text-[#1F2937] text-[18px]" style="font-weight: 700;">Access Solar Incentives
-                        </h2>
-                        <p class=" mt-1 text-gray-400 text-[16px]">In less than 60 seconds you'll find out if you
-                            qualify for solar incentives up
-                            to $3,700.</p>
-                    </div>
-                </div>
-            </div> --}}
     </div>
 </div>
 @stop
