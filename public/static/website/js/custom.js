@@ -45,6 +45,8 @@ $(function() {
         // Mencari tipe input dari langkah saat ini
         var $currentSection = $sections.eq(currentIndex);
         var $currentInputs = $currentSection.find('input[type="radio"]');
+        var $currentText = $currentSection.find('input[type="text"]');
+        var isTextInput = $currentText.length > 0;
         var isRadioInput = $currentInputs.length > 0;
 
         // Jika input adalah radio, periksa apakah ada yang dipilih
@@ -52,6 +54,16 @@ $(function() {
             var radioChecked = $currentInputs.filter(':checked').length > 0;
             if (!radioChecked) {
                 // alert('Please select an option before proceeding.');
+                return;
+            }
+        }
+
+        if (isTextInput) {
+            var $textInputs = $currentText.filter(function() {
+                return $(this).val().trim() === '';
+            });
+            if ($textInputs.length > 0) {
+                // alert('Please enter a value before proceeding.');
                 return;
             }
         }

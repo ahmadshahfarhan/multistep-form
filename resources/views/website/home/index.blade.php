@@ -407,7 +407,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                             first
                             name? *</h1>
                         <input
-                            class="lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px] outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1"
+                            class="lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px] outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1 text-center qwe"
                             type="text" name="Q7" placeholder="first name">
                     </div>
                     <div>
@@ -415,8 +415,8 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                             last
                             name? *</h1>
                         <input
-                            class=" lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px]  outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1"
-                            type="text" name="Q8" placeholder="lass name" >
+                            class=" lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px]  outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1 text-center"
+                            type="text" name="Q8" placeholder="lass name">
                     </div>
                 </div>
             </div>
@@ -439,14 +439,19 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                             <i class="fas fa-envelope"></i>
                             <input
                                 class="lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px] outline-none border-none bg-none"
-                                placeholder="you@email.com" type="email" name="Q9" id="">
+                                placeholder="you@email.com" type="email" name="Q9" id="Q9">
+                                @if ($errors->has('Q9'))
+                                <div style="width:auto; color:red; margin-top:0.25rem;">
+                                    {{ $errors->first('Q9') }}
+                                </div>
+                            @endif 
                         </div>
                     </div>
                     <div>
                         <h1 class="text-black label-panel weigth text-center mb-[12px]" for="">What's
                             your mobile phone number? *</h1>
                         <input
-                            class="custom-input lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px] outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1"
+                            class="custom-input lg:w-[360px] md:w-[360px] sm:w-[360px] w-[340px] outline-none border-[1px] border-[#E5E7EB] rounded-lg p-2 placeholder-1 text-center"
                             type="phone" name="Q10" placeholder="+61 0000 000" required>
                     </div>
                 </div>
@@ -462,7 +467,7 @@ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xX
                 <button type="submit"
                     class=" text-white bg-[#111827] p-3 rounded-lg text-[17px] weigth next">Submit</button>
             </div>
-            
+
 
         </form>
     </div>
