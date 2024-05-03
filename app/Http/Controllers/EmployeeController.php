@@ -28,18 +28,6 @@ class EmployeeController extends Controller
     public function store(Request $request)
     {
 
-        // $this->validate($request, [
-        //     'Q7' => 'required',
-        //     'Q8' => 'required',
-        //     'Q9' => 'required',
-        //     'Q10' => 'required',
-        // ], [
-        //     'Q7.required' => 'Wajib diisi untuk nama depan.',
-        //     'Q8.required' => 'Wajib diisi untuk nama belakang.',
-        //     'Q9.required' => 'Wajib diisi untuk alamat email.',
-        //     'Q10.required' => 'Wajib diisi untuk nomor telepon.',
-        // ]);
-
         // Simpan data ke database
         Multi_Step::create($request->all());
 

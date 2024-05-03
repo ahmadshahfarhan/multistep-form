@@ -85,7 +85,14 @@ $(function() {
         $('.employee-form').parsley().whenValidate({
             group: 'block-' + currentIndex
         }).done(function() {
-            // Lakukan sesuatu setelah validasi sukses
+            // Tampilkan SweetAlert untuk konfirmasi pengiriman data
+            Swal.fire({
+                icon: 'success',
+                title: 'Data berhasil dikirim!',
+                showConfirmButton: false,
+                timer: 3500 // Menampilkan SweetAlert selama 1.5 detik
+            });
+
         }).fail(function() {
             // Lakukan sesuatu setelah validasi gagal
         });
@@ -101,8 +108,6 @@ $(function() {
         navigateTo(0, index);
     });
 });
-
-
 
 
 
