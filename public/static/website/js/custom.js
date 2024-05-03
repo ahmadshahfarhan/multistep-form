@@ -88,7 +88,7 @@ $(function() {
             // Tampilkan SweetAlert untuk konfirmasi pengiriman data
             Swal.fire({
                 icon: 'success',
-                title: 'Data berhasil dikirim!',
+                title: 'I have successfully sent your data!',
                 showConfirmButton: false,
                 timer: 3500 // Menampilkan SweetAlert selama 1.5 detik
             });
