@@ -29,7 +29,7 @@ class EmployeeController extends Controller
     {
 
         // Simpan data ke database
-        Multi_Step::create($request->all());
+        // Multi_Step::create($request->all());
 
         // Kirim data ke SheetDB
         $client = new Client([
