@@ -38,7 +38,7 @@ class EmployeeController extends Controller
             ]
         ]);
 
-        $data = [
+        $data = [   
             'data' => [
                 'id' => "INCREMENT",
                 'Do you own or rent a house?' => $request->input('Q1'),

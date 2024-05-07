@@ -15,7 +15,7 @@
 </div>
 <div class="background flex align-middle relative overflow-hidden">
     <div class="bg-opleft"></div>
-    <div class=" lg:ml-[72px] md:ml-[72px] items-center py-7 zeedds">
+    <div class=" lg:ml-[72px] md:ml-[72px] items-center py-7 zeedds phone-stone">
         <h2 
             class="text-[28px] titan-one-regular" style=" font-weight:700;">On-Grid Solution</h2>
         <h3 class=" lg:w-[600px] md:w-[600px] color-head">Off-grid solar solution is a self-sufficient system.It is designed to provide power to residential or other

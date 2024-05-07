@@ -73,6 +73,12 @@ body {
     z-index: 1;
 }
 
+@media screen and (max-width: 480px) {
+    .phone-stone{
+        display: none;
+    }
+}
+
 .block-pic {
     position: absolute;
     width: 150px;
@@ -316,6 +322,7 @@ body {
         0 2px 4px -1px rgba(238, 121, 0, 0.1);
     transition: 0.3s;
 }
+
 
 /* control question layouting */
 .layout {
