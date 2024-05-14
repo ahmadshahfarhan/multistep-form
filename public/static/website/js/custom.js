@@ -35,7 +35,7 @@ $(function() {
     }
 
     $('.form-navigation .previous').click(function() {
-        navigateTo(curIndex() - 1, currentProgressBarIndex);
+        (navigateTo(curIndex() - 1, currentProgressBarIndex));
     });
 
     $('.form-navigation .next').click(function() {
@@ -66,6 +66,13 @@ $(function() {
                 // alert('Please enter a value before proceeding.');
                 return;
             }
+        }
+
+        if ($currentSection.find('input[name="Q2"]:checked').val() === "No") {
+            // Skip pertanyaan 3 jika "No" dipilih pada pertanyaan 2
+            navigateTo(nextIndex + 1, currentProgressBarIndex);
+             // Langsung ke pertanyaan 4
+            return;
         }
 
         currentProgressBarIndex = nextIndex % $progressBars.length; // Perbarui indeks progress bar
