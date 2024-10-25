@@ -6,6 +6,6 @@
     <div class="bg-[#F3F4F6] step step2 on-layout rounded"></div>
     <div class="bg-[#F3F4F6] step step2 on-layout rounded"></div>
     <div class="bg-[#F3F4F6] step step2 on-layout rounded"></div>
-    <div class="bg-[#F3F4F6] step step2 on-layout rounded"></div>
+    {{-- <div class="bg-[#F3F4F6] step step2 on-layout rounded"></div> --}}
 </div>
 @yield('progres')
